@@ -1,2 +1,2 @@
 # neha-recommends
-Created with CodeSandbox
+ReactJS app created with CodeSandbox
