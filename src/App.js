@@ -5,8 +5,8 @@ const recommenDB = {
   Drama: [
     { name: "BTIMFL", rating: "⭐⭐⭐⭐" },
     { name: "Reply 1988", rating: "⭐⭐⭐⭐" },
-    { name: "Reply 1994", rating: "⭐⭐⭐⭐" },
-    { name: "Reply 1997", rating: "⭐⭐⭐⭐" },
+    { name: "Reply 1994", rating: "⭐⭐⭐⭐⭐" },
+    { name: "Crash Landing On You", rating: "⭐⭐⭐⭐" },
     { name: "It's Okay That's Love", rating: "⭐⭐⭐⭐⭐" },
     { name: "It's Okay To Not Be Okay", rating: "⭐⭐⭐⭐" }
   ],
@@ -44,7 +44,6 @@ export default function App() {
   function buttonValHandler(val) {
     setValue(val);
   }
-  function clickHandler(item) {}
   return (
     <div className="App">
       <h1> Neha's Recommendation! </h1>
@@ -60,7 +59,8 @@ export default function App() {
         <ul>
           {recommenDB[buttonValue].map((item) => (
             <li key={item.name}>
-              <div style={{ fontSize: "larger" }}> {item.name} </div>
+              {/* <img src={image} style={{ float: "right" }}></img> */}
+              <div> {item.name} </div>
               <div style={{ fontSize: "smaller" }}> {item.rating} </div>
             </li>
           ))}
